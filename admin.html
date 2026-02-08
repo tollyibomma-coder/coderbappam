@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bappam TV - Admin Ads</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="topbar">
+  <div class="container nav-wrap">
+    <a class="logo" href="index.html">PREMIUM <strong>BAPPAM.TV</strong></a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="movie.html">Movie</a>
+      <a class="active" href="admin.html">Admin</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container section">
+  <h2 class="section-title">⚙ Admin: Responsive Ads Control</h2>
+  <form id="ad-form" class="admin-form">
+    <input name="title" placeholder="Ad title" required />
+    <input name="image" placeholder="Image URL" required />
+    <input name="url" placeholder="Target URL" required />
+    <select name="placement" required>
+      <option value="home-top">Home Top</option>
+      <option value="home-mid">Home Middle</option>
+      <option value="detail-top">Detail Top</option>
+      <option value="detail-mid">Detail Middle</option>
+    </select>
+    <button class="btn primary" type="submit">Save Ad</button>
+  </form>
+
+  <div id="admin-ads-list" class="admin-list"></div>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
